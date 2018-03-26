@@ -1,0 +1,29 @@
+{
+  "name": "百度收录助手",
+  "description" : "判断链接是否被百度收录",
+  "version": "1.0",
+  "manifest_version": 2,
+  "permissions": [
+    "https://*.baidu.com/",
+    "history"
+  ],
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+  "browser_action": {
+    "default_icon": {
+      "19": "images/icon19.png",
+      "38": "images/icon38.png"
+    }
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F",
+        "mac": "MacCtrl+Shift+F"
+      },
+      "description": "Opens hello.html"
+    }
+  }
+
+}
